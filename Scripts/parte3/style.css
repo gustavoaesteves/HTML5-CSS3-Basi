@@ -1,0 +1,159 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0;;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px ;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/* movimento sobre uma campo, quando passar mouse*/
+nav a:hover {
+    color: #332ab3;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px dashed #000000; /*Coloca borda, espessura formato cor*/
+    border-radius: 25px;/*Coloca borda arredondada*/
+}
+
+/* Coloca efeito quando passar o mouse pelo local*/
+.produtos li:hover {
+    border-color: #332ab3;
+}
+
+/*Coloca efeito quando clicar com o mouse pelo local*/
+.produtos li:active{
+    border-color:  #cc2121;
+}
+
+/*Coloca efeito quando quando passar o mouse, mudando a fonte*/
+.produtos li:hover h2{
+    font-size: 40px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copy {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 25px 0 0;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+} 
+
+form {
+    margin: 40px 0;
+}
+/* os mesmos parâmetros são passados para os dois campos*/
+form label,form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0 px;   
+}
+
+/*transition faz mudar de forma lenta as cores, cursor faz ficar a maozinha de click*/
+.enviar {
+    width: 40%;
+    margin: 20px 0;
+    padding: 15px 0;
+    background: #332ab3;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+/*transform muda tamanho do elemento*/
+.enviar:hover{
+    background: black;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+table {
+    margin: 40px 0 20px;
+}
+
+thead {
+    background:#332ab3;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 10px 15px;
+}
+
+

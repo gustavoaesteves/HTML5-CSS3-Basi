@@ -1,0 +1,300 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0;;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px ;
+    text-shadow: 10px 10px 5px #332ab3 ;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/* movimento sobre uma campo, quando passar mouse*/
+nav a:hover {
+    color: #332ab3;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px dashed #000000; /*Coloca borda, espessura formato cor*/
+    border-radius: 25px;/*Coloca borda arredondada*/
+}
+
+/* Coloca efeito quando passar o mouse pelo local*/
+.produtos li:hover {
+    border-color: #332ab3;
+}
+
+/*Coloca efeito quando clicar com o mouse pelo local*/
+.produtos li:active{
+    border-color:  #cc2121;
+}
+
+/*Coloca efeito quando quando passar o mouse, mudando a fonte*/
+.produtos li:hover h2{
+    font-size: 40px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copy {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 25px 0 0;
+}
+
+
+form {
+    margin: 40px 0;
+}
+/* os mesmos parâmetros são passados para os dois campos*/
+form label,form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0 px;   
+}
+
+/*transition faz mudar de forma lenta as cores, cursor faz ficar a maozinha de click*/
+.enviar {
+    width: 40%;
+    margin: 20px 0;
+    padding: 15px 0;
+    background: #332ab3;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+/*transform muda tamanho do elemento*/
+.enviar:hover{
+    background: black;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+table {
+    margin: 40px 0 20px;
+}
+
+thead {
+    background:#332ab3;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 10px 15px;
+}
+/*css pagina inicial*/
+.banner {
+    width: 100%;
+}
+
+/*em deixa o tamanho proporcional ao tamanho base, clear limpa float*/
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 10px 10px 5px #332ab3 ;
+}
+/*
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+Coloca um elemento antes e um depois do conteúdo
+.titulo-principal:before{
+    content: "★";
+} 
+.titulo-principal::after{
+    content: "★";
+}*/
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+/*float faz a imagem flutuar, mas ainda ocupa seu espaço, texto passa a ficar em volta.*/
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/*linear(radial)-gradient(grau(ou nada), cores)*/
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios{
+    background: #888888;
+    padding: 3em 0; 
+    box-shadow: inset 0 0 50px #505050; 
+}
+/*box-shadow coloca sobram, X Y degrade tamanho cor*/
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow:10px 10px 5px #000000;
+}
+.imagem-beneficios:hover {
+    opacity: 0.5;
+}
+
+.conteudo-beneficios{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+/* espaçamento entre linhas*/
+.itens {
+    line-height: 1.5;
+}
+/*pega o primeiro elemento de uma mesma class, pseudo-classes;n é o elemento desejado :nth-child(n)*/
+.itens:first-child{
+    font-weight: bold;}
+
+.itens:before{
+    content: "★";
+}
+
+.mapa p {
+    margin:  0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
